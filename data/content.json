@@ -1,0 +1,151 @@
+{
+    "hero": {
+        "name": "Shivank Khard",
+        "title": "Senior Full Stack Software Developer",
+        "description": "Building scalable, high-performance applications at industry leaders"
+    },
+    "about": {
+        "bio": [
+            "Full-stack software developer with over 4 years of experience designing and delivering scalable, high-performance applications at industry leaders like Apple and SAP Labs. Skilled in Java, Spring Framework, Kafka, Python, JavaScript, RESTful API integration, and CI/CD pipelines, with a proven track record of leading cross-functional teams and optimizing real-time distributed systems.",
+            "I'm passionate about building efficient, scalable software solutions that solve real-world problems. With experience across the full development lifecycle, I thrive in collaborative environments and enjoy mentoring others to grow together."
+        ],
+        "skills": [
+            {
+                "category": "Languages",
+                "tags": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C"]
+            },
+            {
+                "category": "Frameworks/Libraries",
+                "tags": ["React", "Spring", "UI5"]
+            },
+            {
+                "category": "Databases",
+                "tags": ["SQL", "MongoDB", "CockroachDB", "HANA"]
+            },
+            {
+                "category": "DevOps/Tools",
+                "tags": ["Jenkins", "Docker", "Kubernetes", "Kafka", "Git", "Apache JMeter"]
+            },
+            {
+                "category": "Technologies",
+                "tags": ["RESTful APIs", "WebSockets", "CI/CD", "Monitoring", "ElasticSearch"]
+            }
+        ]
+    },
+    "experience": [
+        {
+            "title": "Full Stack Software Developer",
+            "company": "Apple",
+            "date": "Jul 2024 - Present",
+            "details": [
+                "Led the design and development of a highly available distributed service in PLM, ensuring high scalability and near-zero downtime, demonstrating a commitment to robust and reliable system performance.",
+                "Spearheaded the migration of 8M+ records from CSV to CockroachDB using Python, collaborating across teams to ensure clean, well-structured data. Optimized performance with multithreading, enabling fast and reliable access for critical business use cases.",
+                "Collaborated with cross-functional teams across multiple time zones to deliver features on time, fostering a culture of open communication and knowledge sharing through regular sync-ups and documentation.",
+                "Conducted technical interviews for full-stack roles, ensuring a strong team fit and high-quality hires."
+            ]
+        },
+        {
+            "title": "Full Stack Software Developer",
+            "company": "SAP Labs India",
+            "date": "Jul 2020 - Jul 2024",
+            "details": [
+                "Spearheaded the development of Case Runtime, a pioneering new service based on the CMMN graphical notation. This service efficiently manages cases, allowing for dynamic handling of activities in response to evolving situations.",
+                "Designed and implemented the Metamodel for Case Runtime, ensuring seamless communication between design and runtime phases, while also leading CI/CD pipeline configuration, code review, and Kafka integration.",
+                "Presented cross-system workflow solutions for SAP SuccessFactors using SAP Build Process Automation to 1000+ attendees at SAP DCom, showcasing expertise and promoting SAP's automation capabilities.",
+                "Orchestrated performance test setup and analysis for the Archiving topic within the Process Visibility service. Utilized Apache JMeter technology to assess the impact of new features and informed decision-making through data-driven insights.",
+                "Led cross-functional collaboration with teams across multiple countries and worked closely with Product Managers and UX professionals to implement Stable IDs, enabling SAP Companion for new user assistance to over 3000 users.",
+                "Addressed security concerns mitigating Black Duck vulnerabilities, enhancing system reliability and data integrity."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Dynamic Application Velocity for Fraud Detection",
+            "subtitle": "Citicorp Services, N.A., Mumbai",
+            "date": "May 2019 - Jul 2019",
+            "details": [
+                "Developed new dynamic variables to reduce application fraud rates within the BestBuy portfolio.",
+                "Analyzed 5M credit card applications (through the door) of North American customers over a period of 9 months.",
+                "Developed new velocity variables, addressing missing data to improve fraud detection models.",
+                "Modelled Random Forest to understand the importance of various existing and new created variables in the data.",
+                "Achieved fraud rate of 31% in targeted segment starting from 2.53% initial fraud rate leveraging new variables.",
+                "Recommended addition of new variables-based rules leading to approx. $1.1 MM fraud loss savings per year."
+            ]
+        },
+        {
+            "title": "Recommendation System",
+            "subtitle": "Course Project under Prof. Purshottam Kar",
+            "date": "Sep 2019 - Oct 2019",
+            "details": [
+                "Created a Recommendation System that predicts the top 5 products for each user based on their previous interaction data.",
+                "Reduced dimensionality of data starting from 16,385 variables (many sparse) to identify main components.",
+                "Used various Machine Learning techniques such as LwP, OvA, Decision Tree etc. to achieve high accuracy and fast predictions."
+            ]
+        },
+        {
+            "title": "Hackathon Project: LLM-Based Innovation",
+            "subtitle": "Team Project",
+            "date": "2025",
+            "description": "Developed an innovative solution using LLMs, collaborating with 500+ participants to create a cutting-edge application that showcases practical applications of large language models."
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Technology",
+            "institution": "Indian Institute of Technology, Kanpur",
+            "date": "2016 - 2020",
+            "details": [
+                "CGPA: 9.0/10.0",
+                "Participated in various technical projects and extracurricular activities."
+            ]
+        },
+        {
+            "title": "12th Standard (CBSE)",
+            "institution": "The Shishukunj International School, Indore",
+            "date": "2014 - 2016",
+            "details": [
+                "Percentage: 95.2%"
+            ]
+        },
+        {
+            "title": "10th Standard (CBSE)",
+            "institution": "Sun International School, Jhansi",
+            "date": "2012 - 2014",
+            "details": [
+                "CGPA: 10.0/10.0"
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Academic Excellence",
+            "items": [
+                "Academic Excellence Award, top 10% of IIT Kanpur (2020)",
+                "Secured highest grade A* for standing among top 2% of the class in 2 departmental courses at IIT Kanpur (2019)",
+                "Secured All India Rank 2803 among 1.5 lakh participants in JEE Advanced (2016)",
+                "Secured International Rank 56 in National Science Olympiad conducted by Science Olympiad Foundation (2015)",
+                "Secured All India Rank 229 in National Science Talent Search Examination conducted by Unified Council (2015)"
+            ]
+        },
+        {
+            "title": "Professional & Leadership",
+            "items": [
+                "Won Best Salad award at the BPM Potluck event at SAP Labs",
+                "Student Guide: Provided academic and emotional assistance to 6 freshers for smooth transition into campus life",
+                "Mentored 30+ students in Rubik's Cube solving as Hobby Group Secretary, fostering community engagement"
+            ]
+        },
+        {
+            "title": "Extracurricular",
+            "items": [
+                "Anchored school annual function for 1000+ attendees, demonstrating strong public speaking skills",
+                "Badminton: Bagged 2nd Position in Inter House competition in School among 250+ participants"
+            ]
+        }
+    ],
+    "footer": {
+        "title": "Get In Touch",
+        "description": "Looking for new opportunities and collaborations",
+        "copyright": "© 2025 Shivank Khard. All Rights Reserved."
+    }
+}
