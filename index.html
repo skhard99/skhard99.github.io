@@ -6,369 +6,7 @@
     <title>Shivank Khard - Senior Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #1e88e5;
-            --secondary-color: #0d47a1;
-            --text-color: #333;
-            --bg-color: #f9f9f9;
-            --card-bg: #fff;
-            --accent-color: #e0f2f1;
-            --border-radius: 8px;
-            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-        }
-
-        .hero {
-            padding: 150px 0 80px;
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-        }
-
-        .profile-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .profile-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: var(--box-shadow);
-        }
-
-        .hero-content {
-            max-width: 650px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 {
-            font-size: 24px;
-            font-weight: 400;
-            margin-bottom: 25px;
-        }
-
-        .social-links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 24px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            transform: translateY(-5px);
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: white;
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-            color: var(--secondary-color);
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary-color);
-            border-radius: 2px;
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .about-text {
-            flex: 1;
-            min-width: 300px;
-            padding: 0 20px;
-        }
-
-        .skills {
-            margin-top: 40px;
-        }
-
-        .skill-category {
-            margin-bottom: 20px;
-        }
-
-        .skill-category h3 {
-            margin-bottom: 15px;
-            color: var(--secondary-color);
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-tag {
-            background-color: var(--accent-color);
-            color: var(--secondary-color);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .experience-container, .project-container, .education-container, .achievements-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .card-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--secondary-color);
-        }
-
-        .card-subtitle {
-            font-size: 16px;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .card-date {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .card-content ul {
-            padding-left: 20px;
-            margin-top: 15px;
-        }
-
-        .card-content li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-        .footer-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            margin: 20px 0;
-        }
-
-        .footer-links a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transition: all 0.3s ease;
-            pointer-events: none;
-        }
-
-        .back-to-top.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .back-to-top:hover {
-            background-color: var(--secondary-color);
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                background-color: var(--primary-color);
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-                transition: all 0.3s ease;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .nav-links li {
-                margin: 15px 0;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero h2 {
-                font-size: 20px;
-            }
-
-            .profile-image {
-                width: 200px;
-                height: 200px;
-            }
-
-            .section-title {
-                font-size: 28px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -394,15 +32,15 @@
     <section class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="assets/images/profile.jpg" alt="Shivank Khard" class="profile-image">
+                <img src="assets/images/profile.png" alt="Shivank Khard" class="profile-image">
                 <div class="hero-content">
-                    <h1>Shivank Khard</h1>
-                    <h2>Senior Full Stack Software Developer</h2>
-                    <p>Building scalable, high-performance applications at industry leaders</p>
+                    <h1 id="hero-name"></h1>
+                    <h2 id="hero-title"></h2>
+                    <p id="hero-description"></p>
                     <div class="social-links">
                         <a href="mailto:shivankkhard36@gmail.com"><i class="fas fa-envelope"></i></a>
                         <a href="https://www.linkedin.com/in/shivank-khard" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/skhard99" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                     <a href="#about" class="btn">Learn More</a>
                 </div>
@@ -416,64 +54,9 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Full-stack software developer with over 4 years of experience designing and delivering scalable, high-performance applications at industry leaders like Apple and SAP Labs. Skilled in Java, Spring Framework, Kafka, Python, JavaScript, RESTful API integration, and CI/CD pipelines, with a proven track record of leading cross-functional teams and optimizing real-time distributed systems.</p>
-                    <p>I'm passionate about building efficient, scalable software solutions that solve real-world problems. With experience across the full development lifecycle, I thrive in collaborative environments and enjoy mentoring others to grow together.</p>
-                    
-                    <div class="skills">
-                        <div class="skill-category">
-                            <h3>Languages</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">C++</span>
-                                <span class="skill-tag">C</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Frameworks/Libraries</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Spring</span>
-                                <span class="skill-tag">UI5</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Databases</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">MongoDB</span>
-                                <span class="skill-tag">CockroachDB</span>
-                                <span class="skill-tag">HANA</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>DevOps/Tools</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Jenkins</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">Kubernetes</span>
-                                <span class="skill-tag">Kafka</span>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Apache JMeter</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Technologies</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">RESTful APIs</span>
-                                <span class="skill-tag">WebSockets</span>
-                                <span class="skill-tag">CI/CD</span>
-                                <span class="skill-tag">Monitoring</span>
-                                <span class="skill-tag">ElasticSearch</span>
-                            </div>
-                        </div>
-                    </div>
+                    <p id="bio-1"></p>
+                    <p id="bio-2"></p>
+                    <div class="skills" id="skills-container"></div>
                 </div>
             </div>
         </div>
@@ -483,37 +66,7 @@
     <section id="experience" style="background-color: #f0f8ff;">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
-            <div class="experience-container">
-                <div class="card">
-                    <h3 class="card-title">Full Stack Software Developer</h3>
-                    <h4 class="card-subtitle">Apple</h4>
-                    <div class="card-date">Jul 2024 - Present</div>
-                    <div class="card-content">
-                        <ul>
-                            <li>Led the design and development of a highly available distributed service in PLM, ensuring high scalability and near-zero downtime, demonstrating a commitment to robust and reliable system performance.</li>
-                            <li>Spearheaded the migration of 8M+ records from CSV to CockroachDB using Python, collaborating across teams to ensure clean, well-structured data. Optimized performance with multithreading, enabling fast and reliable access for critical business use cases.</li>
-                            <li>Collaborated with cross-functional teams across multiple time zones to deliver features on time, fostering a culture of open communication and knowledge sharing through regular sync-ups and documentation.</li>
-                            <li>Conducted technical interviews for full-stack roles, ensuring a strong team fit and high-quality hires.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Full Stack Software Developer</h3>
-                    <h4 class="card-subtitle">SAP Labs India</h4>
-                    <div class="card-date">Jul 2020 - Jul 2024</div>
-                    <div class="card-content">
-                        <ul>
-                            <li>Spearheaded the development of Case Runtime, a pioneering new service based on the CMMN graphical notation. This service efficiently manages cases, allowing for dynamic handling of activities in response to evolving situations.</li>
-                            <li>Designed and implemented the Metamodel for Case Runtime, ensuring seamless communication between design and runtime phases, while also leading CI/CD pipeline configuration, code review, and Kafka integration.</li>
-                            <li>Presented cross-system workflow solutions for SAP SuccessFactors using SAP Build Process Automation to 1000+ attendees at SAP DCom, showcasing expertise and promoting SAP's automation capabilities.</li>
-                            <li>Orchestrated performance test setup and analysis for the Archiving topic within the Process Visibility service. Utilized Apache JMeter technology to assess the impact of new features and informed decision-making through data-driven insights.</li>
-                            <li>Led cross-functional collaboration with teams across multiple countries and worked closely with Product Managers and UX professionals to implement Stable IDs, enabling SAP Companion for new user assistance to over 3000 users.</li>
-                            <li>Addressed security concerns mitigating Black Duck vulnerabilities, enhancing system reliability and data integrity.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="experience-container" id="experience-container"></div>
         </div>
     </section>
 
@@ -521,45 +74,7 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Internships & Projects</h2>
-            <div class="project-container">
-                <div class="card">
-                    <h3 class="card-title">Dynamic Application Velocity for Fraud Detection</h3>
-                    <h4 class="card-subtitle">Citicorp Services, N.A., Mumbai</h4>
-                    <div class="card-date">May 2019 - Jul 2019</div>
-                    <div class="card-content">
-                        <ul>
-                            <li>Developed new dynamic variables to reduce application fraud rates within the BestBuy portfolio.</li>
-                            <li>Analyzed 5M credit card applications (through the door) of North American customers over a period of 9 months.</li>
-                            <li>Developed new velocity variables, addressing missing data to improve fraud detection models.</li>
-                            <li>Modelled Random Forest to understand the importance of various existing and new created variables in the data.</li>
-                            <li>Achieved fraud rate of 31% in targeted segment starting from 2.53% initial fraud rate leveraging new variables.</li>
-                            <li>Recommended addition of new variables-based rules leading to approx. $1.1 MM fraud loss savings per year.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Recommendation System</h3>
-                    <h4 class="card-subtitle">Course Project under Prof. Purshottam Kar</h4>
-                    <div class="card-date">Sep 2019 - Oct 2019</div>
-                    <div class="card-content">
-                        <ul>
-                            <li>Created a Recommendation System that predicts the top 5 products for each user based on their previous interaction data.</li>
-                            <li>Reduced dimensionality of data starting from 16,385 variables (many sparse) to identify main components.</li>
-                            <li>Used various Machine Learning techniques such as LwP, OvA, Decision Tree etc. to achieve high accuracy and fast predictions.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Hackathon Project: LLM-Based Innovation</h3>
-                    <h4 class="card-subtitle">Team Project</h4>
-                    <div class="card-date">2025</div>
-                    <div class="card-content">
-                        <p>Developed an innovative solution using LLMs, collaborating with 500+ participants to create a cutting-edge application that showcases practical applications of large language models.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="project-container" id="project-container"></div>
         </div>
     </section>
 
@@ -567,35 +82,7 @@
     <section id="education" style="background-color: #f0f8ff;">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="education-container">
-                <div class="card">
-                    <h3 class="card-title">Bachelor of Technology</h3>
-                    <h4 class="card-subtitle">Indian Institute of Technology, Kanpur</h4>
-                    <div class="card-date">2016 - 2020</div>
-                    <div class="card-content">
-                        <p>CGPA: 9.0/10.0</p>
-                        <p>Participated in various technical projects and extracurricular activities.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">12th Standard (CBSE)</h3>
-                    <h4 class="card-subtitle">The Shishukunj International School, Indore</h4>
-                    <div class="card-date">2014 - 2016</div>
-                    <div class="card-content">
-                        <p>Percentage: 95.2%</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">10th Standard (CBSE)</h3>
-                    <h4 class="card-subtitle">Sun International School, Jhansi</h4>
-                    <div class="card-date">2012 - 2014</div>
-                    <div class="card-content">
-                        <p>CGPA: 10.0/10.0</p>
-                    </div>
-                </div>
-            </div>
+            <div class="education-container" id="education-container"></div>
         </div>
     </section>
 
@@ -603,41 +90,7 @@
     <section id="achievements">
         <div class="container">
             <h2 class="section-title">Achievements</h2>
-            <div class="achievements-container">
-                <div class="card">
-                    <h3 class="card-title">Academic Excellence</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Academic Excellence Award, top 10% of IIT Kanpur (2020)</li>
-                            <li>Secured highest grade A* for standing among top 2% of the class in 2 departmental courses at IIT Kanpur (2019)</li>
-                            <li>Secured All India Rank 2803 among 1.5 lakh participants in JEE Advanced (2016)</li>
-                            <li>Secured International Rank 56 in National Science Olympiad conducted by Science Olympiad Foundation (2015)</li>
-                            <li>Secured All India Rank 229 in National Science Talent Search Examination conducted by Unified Council (2015)</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Professional & Leadership</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Won Best Salad award at the BPM Potluck event at SAP Labs</li>
-                            <li>Student Guide: Provided academic and emotional assistance to 6 freshers for smooth transition into campus life</li>
-                            <li>Mentored 30+ students in Rubik's Cube solving as Hobby Group Secretary, fostering community engagement</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Extracurricular</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Anchored school annual function for 1000+ attendees, demonstrating strong public speaking skills</li>
-                            <li>Badminton: Bagged 2nd Position in Inter House competition in School among 250+ participants</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="achievements-container" id="achievements-container"></div>
         </div>
     </section>
 
@@ -645,12 +98,12 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <h3>Get In Touch</h3>
-                <p>Looking for new opportunities and collaborations</p>
+                <h3 id="footer-title"></h3>
+                <p id="footer-description"></p>
                 <div class="social-links">
                     <a href="mailto:shivankkhard36@gmail.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/shivank-khard" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/skhard99" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="footer-links">
                     <a href="#about">About</a>
@@ -658,7 +111,7 @@
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
                 </div>
-                <p>&copy; 2025 Shivank Khard. All Rights Reserved.</p>
+                <p id="footer-copyright"></p>
             </div>
         </div>
     </footer>
@@ -668,49 +121,6 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <script>
-        // Mobile Navigation
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking on a nav link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('active');
-            } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

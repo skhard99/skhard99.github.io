@@ -1,2 +1,1 @@
-# skhard99.github.io
-## Testing website deployment
+### Repository for showcasing portfolio
