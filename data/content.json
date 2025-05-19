@@ -6,7 +6,7 @@
     },
     "about": {
         "bio": [
-            "Full-stack software developer with over 4 years of experience designing and delivering scalable, high-performance applications at industry leaders like Apple and SAP Labs. Skilled in Java, Spring Framework, Kafka, Python, JavaScript, RESTful API integration, and CI/CD pipelines, with a proven track record of leading cross-functional teams and optimizing real-time distributed systems.",
+            "Full-stack software developer with over 4 years of experience designing and delivering scalable, high-performance applications at industry leaders like Apple and SAP Labs. Skilled in Java, Spring Framework, Kafka, SQL/NoSQL Database, Python, JavaScript, RESTful API integration, and CI/CD pipelines, with a proven track record of leading cross-functional teams and optimizing real-time distributed systems.",
             "I'm passionate about building efficient, scalable software solutions that solve real-world problems. With experience across the full development lifecycle, I thrive in collaborative environments and enjoy mentoring others to grow together."
         ],
         "skills": [
@@ -16,19 +16,19 @@
             },
             {
                 "category": "Frameworks/Libraries",
-                "tags": ["React", "Spring", "UI5"]
+                "tags": ["Spring", "React", "UI5"]
             },
             {
                 "category": "Databases",
-                "tags": ["SQL", "MongoDB", "CockroachDB", "HANA"]
+                "tags": ["PostgreSql", "MongoDB", "CockroachDB", "HANA", "S3"]
             },
             {
                 "category": "DevOps/Tools",
-                "tags": ["Jenkins", "Docker", "Kubernetes", "Kafka", "Git", "Apache JMeter"]
+                "tags": ["Kafka", "Git", "Jenkins", "Docker", "Kubernetes", "Apache JMeter"]
             },
             {
                 "category": "Technologies",
-                "tags": ["RESTful APIs", "WebSockets", "CI/CD", "Monitoring", "ElasticSearch"]
+                "tags": ["RESTful APIs", "WebSockets", "CI/CD", "Monitoring", "ElasticSearch", "Splunk"]
             }
         ]
     },
@@ -39,14 +39,14 @@
             "date": "Jul 2024 - Present",
             "details": [
                 "Led the design and development of a highly available distributed service in PLM, ensuring high scalability and near-zero downtime, demonstrating a commitment to robust and reliable system performance.",
-                "Spearheaded the migration of 8M+ records from CSV to CockroachDB using Python, collaborating across teams to ensure clean, well-structured data. Optimized performance with multithreading, enabling fast and reliable access for critical business use cases.",
+                "Spearheaded the migration of 8M+ records from CSV to Database using Python, collaborating across teams to ensure clean, well-structured data. Optimized performance enabling fast and reliable access for critical business use cases.",
                 "Collaborated with cross-functional teams across multiple time zones to deliver features on time, fostering a culture of open communication and knowledge sharing through regular sync-ups and documentation.",
                 "Conducted technical interviews for full-stack roles, ensuring a strong team fit and high-quality hires."
             ]
         },
         {
-            "title": "Full Stack Software Developer",
-            "company": "SAP Labs India",
+            "title": "Senior Software Developer",
+            "company": "SAP Labs",
             "date": "Jul 2020 - Jul 2024",
             "details": [
                 "Spearheaded the development of Case Runtime, a pioneering new service based on the CMMN graphical notation. This service efficiently manages cases, allowing for dynamic handling of activities in response to evolving situations.",
@@ -61,7 +61,7 @@
     "projects": [
         {
             "title": "Dynamic Application Velocity for Fraud Detection",
-            "subtitle": "Citicorp Services, N.A., Mumbai",
+            "subtitle": "Citicorp Services",
             "date": "May 2019 - Jul 2019",
             "details": [
                 "Developed new dynamic variables to reduce application fraud rates within the BestBuy portfolio.",
@@ -83,10 +83,14 @@
             ]
         },
         {
-            "title": "Hackathon Project: LLM-Based Innovation",
-            "subtitle": "Team Project",
-            "date": "2025",
-            "description": "Developed an innovative solution using LLMs, collaborating with 500+ participants to create a cutting-edge application that showcases practical applications of large language models."
+            "title": "LLM-Powered Referral Tool",
+            "subtitle": "Hackathon Project",
+            "date": "Feb 2025",
+            "details" : [
+                "Enhanced internal referral tool using LLMs to intelligently match candidate resumes with current job openings improving referral accuracy.",
+                "Evaludated and benchmarked multiple LLMs (Gemini, LLaMA, Claude, ChatGPT) through few shot training to identify the most effective tool",
+                "Collaborated in a cross-org, cross-country team of 5 to a scabale AI powered solution"
+            ]
         }
     ],
     "education": [
@@ -95,8 +99,7 @@
             "institution": "Indian Institute of Technology, Kanpur",
             "date": "2016 - 2020",
             "details": [
-                "CGPA: 9.0/10.0",
-                "Participated in various technical projects and extracurricular activities."
+                "CGPA: 9.0/10.0"
             ]
         },
         {
@@ -130,7 +133,7 @@
         {
             "title": "Professional & Leadership",
             "items": [
-                "Won Best Salad award at the BPM Potluck event at SAP Labs",
+                "Buddy: Mentored new hires facilitating their onboarding by imparting essential technical skills and ensuring smooth integration into team processes and culture",
                 "Student Guide: Provided academic and emotional assistance to 6 freshers for smooth transition into campus life",
                 "Mentored 30+ students in Rubik's Cube solving as Hobby Group Secretary, fostering community engagement"
             ]
@@ -138,8 +141,34 @@
         {
             "title": "Extracurricular",
             "items": [
+                "Won Best Salad award at the BPM Potluck event at SAP Labs",
                 "Anchored school annual function for 1000+ attendees, demonstrating strong public speaking skills",
                 "Badminton: Bagged 2nd Position in Inter House competition in School among 250+ participants"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "title": "Software Engineering",
+            "items": [
+                "Java Programming: Solving Problems with Software (Duke University, Coursera)",
+                "Java Programming: Arrays, Lists, and Structured Data (Duke University, Coursera)",
+                "Object Oriented Programming in Java (UC San Diego, Coursera)",
+                "Data Structures and Performance (UC San Diego, Coursera)",
+                "Advanced Data Structures in Java (UC San Diego, Coursera)",
+                "SQL for Data Science (UC Davis, Coursera)",
+                "Spring MVC (LinkedIn Learning)"
+            ]
+        },
+        {
+            "title": "AI/ML",
+            "items": [
+                "Foundations of Prompt Engineering (AWS Learning)",
+                "Introduction to Generative AI - Art of the Possible (AWS Learning)",
+                "Prompt Engineering for ChatGPT (Vanderbilt University, Coursera)",
+                "Generative AI Essentials: Overview and Impact (University of Michigan, Coursera)",
+                "Introduction to Large Language Models (Google Cloud, Coursera)",
+                "Generative AI with Large Language Models (DeepLearning.AI, Coursera)"
             ]
         }
     ],

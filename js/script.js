@@ -110,6 +110,24 @@ async function loadContent() {
             achievementsContainer.appendChild(cardDiv);
         });
 
+        // Certificates Section
+        const certificatesContainer = document.querySelector('#certificates-container');
+        data.certificates.forEach(cert => {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            cardDiv.innerHTML = `
+                <h3 class="card-title">${cert.title}</h3>
+                <div class="card-content"><ul></ul></div>
+            `;
+            const ul = cardDiv.querySelector('ul');
+            cert.items.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                ul.appendChild(li);
+            });
+            certificatesContainer.appendChild(cardDiv);
+        });
+
         // Footer
         document.querySelector('#footer-title').textContent = data.footer.title;
         document.querySelector('#footer-description').textContent = data.footer.description;
