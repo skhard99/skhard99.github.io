@@ -216,7 +216,7 @@ section {
     font-weight: 500;
 }
 
-.experience-container, .project-container, .education-container, .achievements-container {
+.experience-container, .project-container, .education-container, .achievements-container, .certificates-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
