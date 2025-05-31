@@ -88,7 +88,7 @@
             "date": "Feb 2025",
             "details" : [
                 "Enhanced internal referral tool using LLMs to intelligently match candidate resumes with current job openings improving referral accuracy.",
-                "Evaludated and benchmarked multiple LLMs (Gemini, LLaMA, Claude, ChatGPT) through few shot training to identify the most effective tool",
+                "Evaluated and benchmarked multiple LLMs (Gemini, LLaMA, Claude, ChatGPT) through few shot training to identify the most effective tool",
                 "Collaborated in a cross-org, cross-country team of 5 to a scabale AI powered solution"
             ]
         }
