@@ -32,10 +32,15 @@ async function loadContent() {
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
             cardDiv.innerHTML = `
-                <h3 class="card-title">${exp.title}</h3>
-                <h4 class="card-subtitle">${exp.company}</h4>
-                <div class="card-date">${exp.date}</div>
-                <div class="card-content"><ul></ul></div>
+                <div class="card-image">
+                    <img src="${exp.image}" class="profile-image">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">${exp.title}</h3>
+                    <h4 class="card-subtitle">${exp.company}</h4>
+                    <div class="card-date">${exp.date}</div>
+                    <div class="card-content"><ul></ul></div>
+                <div>
             `;
             const ul = cardDiv.querySelector('ul');
             exp.details.forEach(detail => {
@@ -78,10 +83,15 @@ async function loadContent() {
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
             cardDiv.innerHTML = `
-                <h3 class="card-title">${edu.title}</h3>
-                <h4 class="card-subtitle">${edu.institution}</h4>
-                <div class="card-date">${edu.date}</div>
-                <div class="card-content"></div>
+                <div class="card-image">
+                    <img src="${edu.image}" class="profile-image">
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">${edu.title}</h3>
+                    <h4 class="card-subtitle">${edu.institution}</h4>
+                    <div class="card-date">${edu.date}</div>
+                    <div class="card-content"></div>
+                </div>
             `;
             const contentDiv = cardDiv.querySelector('.card-content');
             edu.details.forEach(detail => {

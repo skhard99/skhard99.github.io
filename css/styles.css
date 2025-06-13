@@ -230,6 +230,19 @@ section {
     transition: all 0.3s ease;
 }
 
+.card-image {
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+    display: flex; /* Add flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    flex: 1;
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);

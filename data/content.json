@@ -42,7 +42,8 @@
                 "Spearheaded the migration of 8M+ records from CSV to Database using Python, collaborating across teams to ensure clean, well-structured data. Optimized performance enabling fast and reliable access for critical business use cases.",
                 "Collaborated with cross-functional teams across multiple time zones to deliver features on time, fostering a culture of open communication and knowledge sharing through regular sync-ups and documentation.",
                 "Conducted technical interviews for full-stack roles, ensuring a strong team fit and high-quality hires."
-            ]
+            ],
+            "image" : "assets/images/apple.png"
         },
         {
             "title": "Senior Software Developer",
@@ -55,7 +56,8 @@
                 "Orchestrated performance test setup and analysis for the Archiving topic within the Process Visibility service. Utilized Apache JMeter technology to assess the impact of new features and informed decision-making through data-driven insights.",
                 "Led cross-functional collaboration with teams across multiple countries and worked closely with Product Managers and UX professionals to implement Stable IDs, enabling SAP Companion for new user assistance to over 3000 users.",
                 "Addressed security concerns mitigating Black Duck vulnerabilities, enhancing system reliability and data integrity."
-            ]
+            ],
+            "image" : "assets/images/sap.png"
         }
     ],
     "projects": [
@@ -100,7 +102,8 @@
             "date": "2016 - 2020",
             "details": [
                 "CGPA: 9.0/10.0"
-            ]
+            ],
+            "image": "assets/images/iitk.png"
         },
         {
             "title": "12th Standard (CBSE)",
@@ -108,7 +111,8 @@
             "date": "2014 - 2016",
             "details": [
                 "Percentage: 95.2%"
-            ]
+            ],
+            "image": "assets/images/shishukunj.png"
         },
         {
             "title": "10th Standard (CBSE)",
@@ -116,7 +120,8 @@
             "date": "2012 - 2014",
             "details": [
                 "CGPA: 10.0/10.0"
-            ]
+            ],
+            "image": "assets/images/sunjhs.png"
         }
     ],
     "achievements": [
